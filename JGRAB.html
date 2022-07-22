@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta name="viewport"
+        content="wwidth=devive-width, initial-scale=1">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap">
+    </head>
+    <style>
+        ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+                background-color:white;
+        }
+        li {
+                float: left;
+        }
+        li a {
+                display: block;
+                color:black;
+                text-align: center;
+                padding: 20px 500px 20px 100px;
+                text-decoration: none;
+                font-style: normal;
+                font-family: "Roboto", sans-serif;
+                font-size: 18px;
+        }
+        li a:hover:not(.active) {
+                background-color:#ddd;
+        }
+        li b {
+                display: block;
+                color:black;
+                text-align: center;
+                padding: 20px 30px;
+                text-decoration: none;
+                font-style: normal;
+                font-family: "Roboto", sans-serif;
+                font-size: 18px;
+        }
+        li b:hover:not(.active) {
+                background-color:#ddd;
+        }
+        div {
+                background-color:white;
+                width: 100%;
+                height: 930px;
+                border-top: 30px solid rgb(0, 132, 255);
+                border-right: 180px solid rgb(0, 132, 255);
+                border-bottom: 100px solid rgb(0, 132, 255);
+                border-left: 180px solid rgb(0, 132, 255);
+                padding: 0px;
+        }
+        
+        .column {
+                float: left;
+                padding: 60px;
+        }
+        .row:after {
+                content: "";
+                display: table;
+                clear: both;
+        }
+        .btn {
+                border: none;
+                outline: none;
+                padding: none;
+                background-color: #f1f1f1;
+                cursor:pointer;
+                margin-top: 30px;
+                margin-left: 120px;
+        }
+        .btn:hover {
+                background-color: #ddd;
+        }
+        .btn.active{
+                background-color: rgb(0, 132, 255);
+                color: white;
+                width: 400px;
+                height: 50px;
+                font-size: 17px;
+        }
+        p {
+                font-size: 18px;
+                font-style: normal;
+                font-family: "Roboto", sans-serif;
+                padding: 20px 120px;
+        }
+        .fa:hover {
+                opacity: 1.0;
+        }
+        .fa-facebook {
+                background: grey;
+                color: white;
+                padding: 0px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                margin-left: 300px;
+                border-radius: 50%;
+        }
+
+        * {box-sizing: border-box}
+
+        /* Container needed to position the overlay. Adjust the width as needed */
+        .container {
+                position: relative;
+                width: 100%;
+                max-width: 500px;
+        }
+
+        /* Make the image to responsive */
+        .image {
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin-bottom: 30px;
+        }
+
+        /* The overlay effect - lays on top of the container and over the image */
+        .overlay {
+                position: absolute;
+                bottom: 0;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                color: #f1f1f1;
+                width: 100%;
+                transition: .5s ease;
+                opacity:0;
+                color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+        }
+
+        /* When you mouse over the container, fade in the overlay title */
+        .container:hover .overlay {
+                opacity: 1;
+        }
+    </style>
+
+    <body>
+        <nav>
+                <ul>
+                        <li><a href="#about.me">about.me</a></li>
+                        <li><b href="#Getstartedforfree">Get started for free</b></li>
+                        <li><b href="#Features">Features</b></li>
+                        <li><b href="#Pricing">Pricing</b></li>
+                        <li><b href="#Log In">Log In</b></li>
+                </ul>
+        </nav>
+
+        <div class="Container">
+                <img src="./girl-people-landscape-sun-38554.jpeg" class="image"> 
+                <div class="overlay">
+                        <h1>ANNA PAUL</h1>
+                        <h2>A Model and an actoress</h2>
+                </div>
+        <div id="btnContainer">
+           <button class="btn active"
+           onclick="gridView()"><i class="fa fa-th-large">&nbsp;</i>View my photos</button>
+           <p>Hello, my name is Anna and i am an actoress, Click view my photos to see. Contact me at 919-901-8915
+          </p>
+        </div>
+   <br>
+   
+   <a href="#" class="fa fa-facebook"></a>
+ </div>
+ </body>
+</html>
